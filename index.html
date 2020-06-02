@@ -1308,7 +1308,7 @@ when it receives a particular <a>command</a>.
 </section> <!-- /Errors -->
 
 <section>
-<h3>Extensions</h3>
+<h2>Extensions</h2>
 
 <p>Using the terminology defined in this section, others may define additional
  commands that seamlessly integrate with the standard protocol. This allows
@@ -1461,7 +1461,7 @@ with a "<code>moz:</code>" prefix:
   <td>"<code>acceptInsecureCerts</code>"
   <td>boolean
   <td>Indicates whether untrusted and self-signed TLS certificates
-   are implicitly trusted on <a>navigation</a>
+   are implicitly trusted on <a data-lt=go>navigation</a>
    for the duration of the <a>session</a>.
  </tr>
 
@@ -1913,7 +1913,7 @@ with a "<code>moz:</code>" prefix:
    <dt>"<code>acceptInsecureCerts</code>"
    <dd><a>Boolean</a> initially set to false,
     indicating the session will not implicitly trust untrusted
-    or self-signed TLS certificates on <a>navigation</a>.
+    or self-signed TLS certificates on <a data-lt=go>navigation</a>.
 
    <dt>"<code>strictFileInteractability</code>"
     <dd><a>Boolean</a> initially set to false,
@@ -2133,7 +2133,7 @@ and <a href=#elements>element retrieval</a>.
  that indicates whether untrusted or self-signed TLS certificates
  should be trusted for the duration of the WebDriver session.
  If it is unset, this indicates that certificate- or TLS errors
- that occur upon <a>navigation</a> should be suppressed.
+ that occur upon <a data-lt=go>navigation</a> should be suppressed.
  The state can be unset by providing
  an "<code>acceptInsecureCerts</code>" <a>capability</a> with the value true.
  Unless stated otherwise, it is set.
@@ -2937,7 +2937,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 <p class=note>This command causes the browser to traverse
  one step backward in the <a>joint session history</a>
  of the <a>current top-level browsing context</a>.
- This is equivalent to pressing the back button in the <a>browser chrome</a>
+ This is equivalent to pressing the back button in the browser chrome
  or invoking <code>window.history.back</code>.
 
 <p>The <a>remote end steps</a> are:
@@ -2982,7 +2982,7 @@ Return <a>success</a> with data <a><code>null</code></a>.
 <p class=note>This command causes the browser
  to traverse one step forwards in the <a>joint session history</a>
  of the <a>current top-level browsing context</a>.
- This is equivalent to pressing the forward button in the <a>browser chrome</a>
+ This is equivalent to pressing the forward button in the browser chrome
  or invoking <code>window.history.forward</code>.
 
 <p>The <a>remote end steps</a> are:
@@ -3498,7 +3498,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Switch To Parent Frame -->
 
 <section>
-<h3>Resizing and positioning windows</h3>
+<h2>Resizing and positioning windows</h2>
 
 <p>WebDriver provides <a>commands</a>
  for interacting with the operating system window
@@ -3618,7 +3618,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
  or until the operation times out.
 
 <section>
-<h4><dfn>Get Window Rect</dfn></h4>
+<h3><dfn>Get Window Rect</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3652,7 +3652,7 @@ make the tab containing the <a>browsing context</a> the selected tab.
 </section> <!-- /Get Window Rect -->
 
 <section>
-<h4><dfn>Set Window Rect</dfn></h4>
+<h3><dfn>Set Window Rect</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3717,13 +3717,13 @@ corresponding to the <a>current top-level browsing context</a>.
    <li><p>Set the width, in <a>CSS pixels</a>,
     of the operating system window containing
     the <a>current top-level browsing context</a>,
-    including any <a>browser chrome</a> and externally drawn window decorations
+    including any browser chrome and externally drawn window decorations
     to a value that is as close as possible to <var>width</var>.
 
   <li><p>Set the height, in <a>CSS pixels</a>,
    of the operating system window containing
    the <a>current top-level browsing context</a>,
-   including any <a>browser chrome</a> and externally drawn window decorations
+   including any browser chrome and externally drawn window decorations
    to a value that is as close as possible to <var>height</var>.
 
    <aside class=note>
@@ -3778,7 +3778,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Set Window Rect -->
 
 <section>
-<h4><dfn>Maximize Window</dfn></h4>
+<h3><dfn>Maximize Window</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3825,7 +3825,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Maximize Window -->
 
 <section>
-<h4><dfn>Minimize Window</dfn></h4>
+<h3><dfn>Minimize Window</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -3868,7 +3868,7 @@ corresponding to the <a>current top-level browsing context</a>.
 </section> <!-- /Minimize Window -->
 
 <section>
-<h4><dfn>Fullscreen Window</dfn></h4>
+<h3><dfn>Fullscreen Window</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -5579,7 +5579,7 @@ an <a>element not interactable</a> <a>error</a> is returned.
 <p>
 A <dfn>non-typeable form control</dfn>
 is an <a><code>input</code> element</a>
-whose <a><code>type</code> attribute</a> state
+whose <a data-lt="input type state"><code>type</code> attribute</a> state
 causes the primary input mechanism
 not to be through means of a keyboard, whether virtual or physical.
 
@@ -6261,7 +6261,7 @@ a <a>remote end</a> must run the following steps:
  and is therefore not subject to the document CSP <a>directives</a>.
 
 <section>
-<h4><dfn>Execute Script</dfn></h4>
+<h3><dfn>Execute Script</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6317,7 +6317,7 @@ a <a>remote end</a> must run the following steps:
 </section> <!-- /Execute Script -->
 
 <section>
-<h4><dfn>Execute Async Script</dfn></h4>
+<h3><dfn>Execute Async Script</dfn></h3>
 
 <table class="simple jsoncommand">
  <tr>
@@ -6868,7 +6868,7 @@ The first argument provided to the function will be serialized to JSON and retur
 </aside> <!-- /example -->
 
 <section>
-<h3>Input sources</h3>
+<h2>Input sources</h2>
 
 <p class=note>
 The objects and properties defined in this section are spec-internal constructs
@@ -6886,7 +6886,7 @@ For convenience the same terminology is used for their manipulation.
 
 
 <section>
-<h4 id=input-sources>Sources</h4>
+<h3 id=input-sources>Sources</h3>
 
 <p>A <dfn>null input source</dfn> is an <a>input source</a> that is
  not associated with a specific physical device. A <a>null input source</a>
@@ -6970,11 +6970,16 @@ the <a>input source</a>’s <a>input source state</a>. When an
 sources</a>, the corresponding entry in the <a>input state table</a>
 is also removed.
 
+<p>A <dfn>wheel input source</dfn> is an <a>input source</a> that is
+ associated with a wheel-type input device.
+ A <a>wheel input source</a> supports the same <a>pause</a> action
+ as a <a>null input source</a> plus the following actions:
+
 </section> <!-- /input-sources -->
 
 
 <section>
-<h4 id=input-source-state>State</h4>
+<h3 id=input-source-state>State</h3>
 
 <p>
 <dfn>Input source state</dfn> is used as a generic term to
@@ -7182,7 +7187,7 @@ from a machine utilisation perspective.
 
 
 <section>
-<h3>Processing actions</h3>
+<h2>Processing actions</h2>
 
 <p>The algorithm for <a data-lt="extract an action sequence">
  extracting an action sequence from a request</a> takes the
@@ -7627,7 +7632,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h3>Dispatching actions</h3>
+<h2>Dispatching actions</h2>
 
 <p>The algorithm to <a>dispatch actions</a> takes a list of actions
  grouped by <a>tick</a>, and then causes each action to be run at the
@@ -7753,7 +7758,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h4>General actions</h4>
+<h2>General actions</h2>
 
 <p>When required to <dfn>dispatch a pause action</dfn> with
  arguments <var>source id</var>, <var>action object</var>,
@@ -7767,7 +7772,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h4>Keyboard actions</h4>
+<h2>Keyboard actions</h2>
 
 <p>The <dfn>normalised key value</dfn> for a raw key <var>key</var>
  is, if <var>key</var> appears in the table below, the string value in
@@ -8072,7 +8077,7 @@ Return <a>success</a> with data <var>action</var>.
   the <var>subtype</var> property changed to "<code>keyUp</code>"
   to <a>current session</a>’s <a>input cancel list</a>.
 
- <li><p><a>Perform implementation-specific
+ <li><p><a data-lt=perform-actions>Perform implementation-specific
   action dispatch steps</a> equivalent to pressing a key on the
   keyboard in accordance with the requirements of [[UI-EVENTS]], and
   producing the following events, as appropriate, with the specified
@@ -8174,7 +8179,7 @@ Return <a>success</a> with data <var>action</var>.
  <li><p>Remove <var>key</var> from the set corresponding
   to <var>input state</var>’s <code>pressed</code> property.
 
- <li><p><a>Perform implementation-specific
+ <li><p><a data-lt=perform-actions>Perform implementation-specific
   action dispatch steps</a> equivalent to releasing a key on the
   keyboard in accordance with the requirements of [[UI-EVENTS]], and
   producing at least the following events with the specified
@@ -8208,7 +8213,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h4>Pointer actions</h4>
+<h2>Pointer actions</h2>
 
 <p>When required to <dfn>dispatch a pointerDown action</dfn> with
  arguments <var>source id</var>, <var>action object</var>,
@@ -8239,7 +8244,7 @@ Return <a>success</a> with data <var>action</var>.
   the <var>subtype</var> property changed to "<code>pointerUp</code>" to
   the <a>current session</a>’s <a>input cancel list</a>.
 
- <li><p><a>Perform implementation-specific
+ <li><p><a data-lt="perform-actions">Perform implementation-specific
   action dispatch steps</a> equivalent to pressing the button
   numbered <var>button</var> on the pointer with ID
   <var>source id</var>, having type <var>pointerType</var> at
@@ -8287,7 +8292,7 @@ Return <a>success</a> with data <var>action</var>.
   let <var>buttons</var> be the resulting value of that
   property.
 
- <li><p><a>Perform implementation-specific
+ <li><p><a data-lt=perform-actions>Perform implementation-specific
   action dispatch steps</a> equivalent to releasing the button
   numbered <var>button</var> on the pointer of ID
   <var>source id</var> having type <var>pointerType</var> at
@@ -8435,7 +8440,7 @@ Return <a>success</a> with data <var>action</var>.
    <li><p>Let <var>buttons</var> be equal to input
     state’s <code>buttons</code> property.
 
-   <li><p><a>Perform implementation-specific
+   <li><p><a data-lt="perform-actions">Perform implementation-specific
     action dispatch steps</a> equivalent to moving the pointer with
     ID <var>source id</var> having type <var>pointerType</var> from
     viewport x coordinate <var>current x</var>, viewport y
@@ -8500,7 +8505,7 @@ Return <a>success</a> with data <var>action</var>.
  <a>remote end</a> must run the following steps:
 
 <ol>
- <li><p><a>Perform implementation-specific
+ <li><p><a data-lt=perform-actions>Perform implementation-specific
   action dispatch steps</a> equivalent to cancelling the any action of
   the pointer with ID <var>source id</var> having
   type <var>pointerType</var>, in accordance with the requirements of
@@ -8513,7 +8518,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h3><dfn>Perform Actions</dfn></h3>
+<h2><dfn>Perform Actions</dfn></h2>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8550,7 +8555,7 @@ Return <a>success</a> with data <var>action</var>.
 
 
 <section>
-<h3><dfn>Release Actions</dfn></h3>
+<h2><dfn>Release Actions</dfn></h2>
 
 <table class="simple jsoncommand">
  <tr>
@@ -8616,7 +8621,7 @@ It also clears all the internal state of the virtual devices.
 
 <p><a>User prompts</a> that are spawned
  from <a><code>beforeunload</code></a> event handlers,
- are <a>dismissed</a> implicitly upon <a>navigation</a>
+ are <a>dismissed</a> implicitly upon <a data-lt=go>navigation</a>
  or <a>close window</a>,
  regardless of the defined <a>user prompt handler</a>.
 
@@ -9466,7 +9471,7 @@ ensuring both privacy and preventing state from bleeding through to the next ses
  make an effort to visually distinguish
  a user agent session that is under control of WebDriver
  from those used for normal browsing sessions.
- This can be done through a <a>browser chrome element</a>
+ This can be done through a browser chrome element
  such as a “door hanger”,
  colorful decoration of the OS window,
  or some widget element that is prevalent in the window
@@ -9879,7 +9884,8 @@ to automatically sort each list alphabetically.
    <!-- Raw value --> <li><dfn><a href=https://html.spec.whatwg.org/#concept-textarea-raw-value>Raw value</a></dfn>
    <!-- Refresh state pragma directive --> <li><dfn><a href=https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh>Refresh state pragma directive</a></dfn>
    <!-- Reset algorithm --> <li><dfn data-lt="reset algorithms"><a href=https://html.spec.whatwg.org/#concept-form-reset-control>Reset algorithm</a></dfn>
-   <!-- Resettable element --> <li><dfn data-lt="resettable elements|resettable"><a href=https://html.spec.whatwg.org/#category-reset>Resettable element</a></dfn>
+   <!-- Resettable element --> <li><dfn data-lt="resettable elements"><a href=https://html.spec.whatwg.org/#category-reset>Resettable</a></dfn> element
+   <!-- Resettable element --> <li><dfn><a href=https://html.spec.whatwg.org/#category-reset>Resettable element</a></dfn>
    <!-- Run the animation frame callbacks --> <li><dfn><a href="https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#run-the-animation-frame-callbacks">Run the animation frame callbacks</a></dfn>
    <!-- Satisfies its constraints --> <li><dfn><a href=https://html.spec.whatwg.org/#concept-fv-valid>Satisfies its constraints</a></dfn>
    <!-- Script --> <li><dfn><a href=https://html.spec.whatwg.org/#concept-script>Script</a></dfn>
@@ -9949,8 +9955,8 @@ to automatically sort each list alphabetically.
 
  <dd><p>The HTML specification also defines a range of different attributes:
   <ul>
-   <!-- Canvas height attribute --> <li><dfn lt="canvas height attribute"><a href=https://html.spec.whatwg.org/#attr-canvas-height><code>canvas</code>’s height attribute</a></dfn>
-   <!-- Canvas width attribute --> <li><dfn lt="canvas width attribute"><a href=https://html.spec.whatwg.org/#attr-canvas-width><code>canvas</code>’ width attribute</a></dfn>
+   <!-- Canvas height attribute --> <li><dfn><a href=https://html.spec.whatwg.org/#attr-canvas-height><code>canvas</code>’s height attribute</a></dfn>
+   <!-- Canvas width attribute --> <li><dfn><a href=https://html.spec.whatwg.org/#attr-canvas-width><code>canvas</code>’ width attribute</a></dfn>
    <!-- Checked content attribute --> <li><dfn><a href=https://html.spec.whatwg.org/#attr-input-checked>Checked</a></dfn>
    <!-- Multiple attribute --> <li><dfn><a href=https://html.spec.whatwg.org/#attr-input-multiple><code>multiple</code> attribute</a></dfn>
    <!-- readOnly attribute --> <li><dfn><a href=https://html.spec.whatwg.org/#the-readonly-attribute><code>readOnly</code> attribute</a></dfn>
